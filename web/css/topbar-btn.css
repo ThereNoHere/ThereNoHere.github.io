@@ -1,0 +1,29 @@
+.icon-btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: transparent;
+    border-radius: 12px;
+    cursor: pointer;
+
+    display: grid;
+    place-items: center;
+}
+
+.icon-btn:hover {
+    background: rgba(0,0,0,0.06);
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0.2);
+}
+
+body.dark .icon-btn:hover {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+body.dark .icon {
+    filter: brightness(3);
+}

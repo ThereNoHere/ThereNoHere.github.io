@@ -1,0 +1,14 @@
+:root {
+    --light-bg: #fff5dd;
+}
+
+body {
+    margin: 0;
+    background: var(--light-bg);
+    transition: background-color 0.2s ease;
+}
+
+body.dark {
+    background: #292929;
+    color: #eaeaea;
+}

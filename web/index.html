@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人小站</title>
+
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/topbar-btn.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+</head>
+
+<body>
+    <header class="topbar">
+        <b class="title">主页</b>
+
+        <div class="right-actions">
+            <div class="menu-wrap">
+                <button class="icon-btn" id="themeBtn" title="主题模式切换">
+                    <img src="icons/Material/brightness.svg" class="icon" alt="主题模式切换">
+                </button>
+
+                <div class="dropdown" id="themeMenu">
+                    <button class="menu-item" id="themeSystem">跟随系统</button>
+                    <button class="menu-item" id="themeLight">浅色模式</button>
+                    <button class="menu-item" id="themeDark">深色模式</button>
+                </div>
+            </div>
+
+            <button class="icon-btn" id="settingsBtn" title="设置">
+                <img src="icons/Material/settings.svg" class="icon" alt="设置">
+            </button>
+        </div>
+    </header>
+    
+    <div class="card">
+        <div class="card-title">实验品 尚未完工</div>
+        <p class="card-text">
+            <b>已知主题切换下拉菜单深色模式选项失效的问题</b>
+            <br>
+            主题切换下拉菜单尚未完工
+            <br>
+            浅色模式尚未完工
+            <br>
+            浅色模式颜色自定义尚未完工
+            <br>
+            设置页面尚未完工
+            <br>
+            顶栏尚未完工
+            <br>
+            关于我尚未完工
+            <br><br>
+            请使用深色模式以获得最佳观感
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="card-title">关于网站</div>
+        <p class="card-text">
+            特别感谢ChatGPT、Kimi，没有他们就没有这个网站。
+        </p>
+    </div>
+
+    <div class="modal" id="settingsModal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-label="设置">
+            <div class="modal-header">
+                <b class="modal-title">设置</b>
+                <button class="icon-btn modal-close" id="settingsClose" title="关闭">
+                    <img src="icons/Material/close.svg" class="icon" alt="关闭">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="setting-row">
+                    <label class="setting-label">浅色背景色</label>
+                    <input type="text" id="lightBgInput" placeholder="#fff5dd" maxlength="7">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/themeChanger.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+</html>

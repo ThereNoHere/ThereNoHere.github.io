@@ -1,0 +1,29 @@
+.topbar {
+    position: sticky;
+    top: 0;
+    background: #fff3d7;
+    padding: 12px 16px;
+    border-bottom: 1px solid #fff6e2;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body.dark .topbar {
+    background: #222222;
+    border-bottom: 1px solid #202020;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.right-actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
